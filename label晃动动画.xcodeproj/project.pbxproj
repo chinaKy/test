@@ -14,6 +14,9 @@
 		093ED6511B2A8DE200150072 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093ED6501B2A8DE200150072 /* Images.xcassets */; };
 		093ED6541B2A8DE200150072 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093ED6521B2A8DE200150072 /* LaunchScreen.xib */; };
 		093ED6601B2A8DE200150072 /* label____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 093ED65F1B2A8DE200150072 /* label____Tests.m */; };
+		093ED66B1B2A8E0000150072 /* CALayer+Anim.m in Sources */ = {isa = PBXBuildFile; fileRef = 093ED66A1B2A8E0000150072 /* CALayer+Anim.m */; };
+		093ED66D1B2A902900150072 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 093ED66C1B2A902900150072 /* test.jpg */; };
+		A5F49ECD8C08024D0295880D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 907833CF186E6A384D5588E9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		093ED6591B2A8DE200150072 /* label晃动动画Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "label晃动动画Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		093ED65E1B2A8DE200150072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		093ED65F1B2A8DE200150072 /* label____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "label____Tests.m"; sourceTree = "<group>"; };
+		093ED6691B2A8E0000150072 /* CALayer+Anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Anim.h"; sourceTree = "<group>"; };
+		093ED66A1B2A8E0000150072 /* CALayer+Anim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Anim.m"; sourceTree = "<group>"; };
+		093ED66C1B2A902900150072 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		907833CF186E6A384D5588E9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F49ECD8C08024D0295880D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +74,7 @@
 				093ED6421B2A8DE200150072 /* label晃动动画 */,
 				093ED65C1B2A8DE200150072 /* label晃动动画Tests */,
 				093ED6411B2A8DE200150072 /* Products */,
+				7A756F3279EC5691BF1F3104 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +90,9 @@
 		093ED6421B2A8DE200150072 /* label晃动动画 */ = {
 			isa = PBXGroup;
 			children = (
+				093ED66C1B2A902900150072 /* test.jpg */,
+				093ED6691B2A8E0000150072 /* CALayer+Anim.h */,
+				093ED66A1B2A8E0000150072 /* CALayer+Anim.m */,
 				093ED6471B2A8DE200150072 /* AppDelegate.h */,
 				093ED6481B2A8DE200150072 /* AppDelegate.m */,
 				093ED64A1B2A8DE200150072 /* ViewController.h */,
@@ -119,6 +131,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7A756F3279EC5691BF1F3104 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				907833CF186E6A384D5588E9 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 093ED6631B2A8DE200150072 /* Build configuration list for PBXNativeTarget "label晃动动画" */;
 			buildPhases = (
+				E91CF54B84485146550DD525 /* Check Pods Manifest.lock */,
 				093ED63C1B2A8DE200150072 /* Sources */,
 				093ED63D1B2A8DE200150072 /* Frameworks */,
 				093ED63E1B2A8DE200150072 /* Resources */,
+				10C75061B25E5AF481BAD7EF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +224,7 @@
 				093ED64F1B2A8DE200150072 /* Main.storyboard in Resources */,
 				093ED6541B2A8DE200150072 /* LaunchScreen.xib in Resources */,
 				093ED6511B2A8DE200150072 /* Images.xcassets in Resources */,
+				093ED66D1B2A902900150072 /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +237,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10C75061B25E5AF481BAD7EF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E91CF54B84485146550DD525 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		093ED63C1B2A8DE200150072 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,6 +277,7 @@
 			files = (
 				093ED64C1B2A8DE200150072 /* ViewController.m in Sources */,
 				093ED6491B2A8DE200150072 /* AppDelegate.m in Sources */,
+				093ED66B1B2A8E0000150072 /* CALayer+Anim.m in Sources */,
 				093ED6461B2A8DE200150072 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "label晃动动画/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "label晃动动画/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +477,7 @@
 				093ED6651B2A8DE200150072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		093ED6661B2A8DE200150072 /* Build configuration list for PBXNativeTarget "label晃动动画Tests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +486,7 @@
 				093ED6681B2A8DE200150072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
